@@ -2,6 +2,10 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 20rem 0; ///bugg
+    }
 }
 
 .section-features {
@@ -10,7 +14,7 @@
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
-        url('https://picsum.photos/200/300');
+        url('https://lh3.googleusercontent.com/c85fXSiegKISj_edNXCww_v7k4cmcU_HbkBkbOtVCjMlY1S-5h2Q3KfCvbfEXaJVcAkglSdtl-95dK5WsZ09LAVy-Jx4Ule6hfNXZuH_Ok7zV-GoPFJjX1GypRm-VtfsKOEsACklFyiGksMtIS96HRLYYxTwrwgxSkScPlWr0rVFoS71vjh11Wu1aNDneqAei2lcP_FTA245X-AdK6UAwOpO-b-kQf_ltY2CiYkZqHLt4NMqIEYZG52tP3DVlrAKnecc7JL10lLAwlu4_OcxirrjsTNACTJMFJs0YWU3ZAAgrtxHyEbAd3X2_3liQfoqKiujmwxS_z-jwa37mdMsmyENcReerSUmD-eJZF0hdvK0hBY1146XAIw9f16vAOhT9FQBHqK3fuCfrAzMF0mrtezOiQsArh88V6BBO4vOxibme3qyZxIsoS-6878wL44eevXyef9TTGV4rN6zAKhdHgb8nuEgkOyqvy01wYw8H0p7LEdrxtgWWM0fZWmovlo2BOEt9mnoqFq1quV6QwLg_zkfz9WbbAhy8mfflhnRtNH4PrFJqxENRdgEoL7h9fAMzigU4ffiptKapcfAOakQVrJoToqCYO9uFBcf2RHMoJHnYi-6Cwd7h24lyPsut581ZMBwK0T6HtcVBTieNEVpztgmGGnpbVhg1Gj-2Cq5gd6D4KkF-e-p_PEyV2jWB4I=w309-h232-no?authuser=1');
         background-size: cover;
         transform: skewY(-7deg);
         margin-top: -11rem;
@@ -18,23 +22,39 @@
         & > * {
             transform: skewY(7deg);
         }
+
+        @include respond(tab-port) {
+            padding: 10rem 0;
+        }
 }
 
 .section-tours {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
     margin-top: -11rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
 }
 
 .section-stories{
     position: relative;
     padding: 15rem 0;
     background-color: $color-grey-light-1;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
@@ -42,7 +62,7 @@
                                             rgba($color-white, .9) 0%,
                                             rgba($color-white, .9) 50%,
                                              transparent 50%),
-     url("https://images.unsplash.com/photo-1583031945386-c86be9a31d3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
+     url("https://lh3.googleusercontent.com/jjQEHwKUK3saBVIC8yznzAnFqJdqGCnmx881TVFipb5ywL6C4CMJu707X8kH6q5jshEIT9M1xy9UbCHX3UrxBUq2jHyxg0bBjDpjAsT3izgECLQ39Da7Y_ACJjmJx-Qio1GILYIOr7_mWCPssiwX8VMWjWnDS53qgtJbN9ilwNqbnJhgnbyrqpQPdII9TdmmCaq8MpuDbfF7c9E8N64DVCJ0pnzPiMbsOQOkceWIgjjTJJLYT7Wc2T9FabrpqGmBFwhCnFw4VwXPMz2CmOyUAsaD5gEsBhq39m7cvxM9qIr_aUV-K-qxssDB-_2D8ybRQ1v5eEu2oIlBmfMJFb_yY2FChMG3lZiGuDWHE5eI6FGKYz9yNjUJULyGJZgLkjqG-HeWadr_c8YM85Q9P47WsF9Kg0_BMU10PaIceJfFRT5298y-m6PS3QvEwrbg2Gn8yr4O89IAGnNWf6NNzT0L0WriMzA9_itZzfl8xMXkwWhBDV1apeBku1Kh_n3bloTKCIOxfCdhOpZ-bFQ2djuByuf3hyYJa_nkbgnZ3xDkl074LSPbMXMI0PGg7GKlKH-Qoem8MsgJL1Kj-3GrYB6E6Pr-i2UmWQyQRhFtiJCMqY57-zVLsfpBRJRv8gCN4UTPFfFy3L8MHFGWQxXrpAFzfXFQFffsWJs6FW0eTD-mq_5n-wyLD8COkDwpZRbZiTg=w679-h905-no?authuser=1");
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
